@@ -1,0 +1,161 @@
+* {
+
+    background-color: rgb(85, 148, 155);
+    padding: 0px;
+    margin: 0px;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    
+    flex-direction: column;
+}
+
+.suscenter{
+    
+    position: absolute;
+    height:30px;
+    width: 30px;
+    border-radius: 50px;
+    margin: 132px;
+    background-color: whitesmoke;
+    z-index: 1;
+
+}
+
+
+.topwing{
+    position: absolute;
+    background-color: rgb(150, 81, 178);  
+    height:280px;
+    width: 100px;
+    border-radius: 50px;
+    margin: 10px;
+   
+    
+}
+
+.topwing::after{
+    content: "";
+    display: block;
+    background-color: rgb(150, 81, 178);
+    height:280px;
+    width: 100px;
+    border-radius: 50px;
+    transform: rotate(-60deg)
+    
+}
+
+.topwing::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(150, 81, 178);
+    height:280px;
+    width: 100px;
+    border-radius: 50px;
+    transform: rotate(60deg)
+    
+}
+
+
+/* 
+
+.bottomwing{
+    background-color: aquamarine;
+    position: relative;
+    border-radius: 300px;
+    margin: 10px;
+   
+    transform: rotate(90deg)
+    
+   
+    
+
+}
+
+.leftwing{
+    background-color: aquamarine;
+    position: relative;
+    border-radius: 300px;
+    margin: 10px;
+   
+    transform: rotate(120deg)
+    
+    
+
+}
+
+.rightwing{
+    background-color: aquamarine;
+    
+    position: relative;
+    border-radius: 300px;
+    margin: 10px;
+   
+    transform: rotate(180deg)
+    
+
+}
+
+.eastwing{
+    background-color: aquamarine;
+    position: relative;
+    border-radius: 300px;
+    margin: 10px;
+   
+    transform: rotate(-60deg)
+    
+    
+
+}
+
+.westwing{
+    background-color: aquamarine;
+    position: relative;
+    border-radius: 300px;
+    margin: 10px;
+   
+    transform: rotate(-90deg)
+    
+    
+
+} */
+
+.susbody{
+  
+    display: flex;
+    align-items: center;
+    height: 520px;
+    width: 30px;
+    border-radius: 500px;
+    margin: 100px;
+    background-color: rgb(65, 130, 59);
+    
+
+}
+
+.owner{
+    text-align: center;
+    background-color: black;
+    height: 50px;
+    padding: 80px;
+    color: blanchedalmond;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.creator{
+
+    background-color: black;
+}
+
+@media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
